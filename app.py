@@ -1,11 +1,12 @@
 
 import streamlit as st
-from src.utils import data_import 
+import pandas as pd 
 
 st.title("Coin Market Capital Updated Dataset")
 
+filepath = "Dataset/API.csv"
+df = pd.read_csv(filepath)
 
-df = data_import('Dataset/API.csv')
 df.drop(
     'Unnamed: 0' , axis = 1
 )

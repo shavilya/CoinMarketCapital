@@ -7,7 +7,7 @@ HYPHEN_E_DOT = "-e ."
 
 def get_requirements(filename : str) -> List[str] : 
 
-    with open('requirments.txt') as file_obj : 
+    with open('requirements.txt') as file_obj : 
 
         requirements = file_obj.readlines()
         requirements = [req.replace("\n" , "") for req in requirements]
